@@ -1,10 +1,13 @@
-import React from 'react'
+import React,{useContext} from 'react'
+import { sendName } from './ContextApi'
 
-const Work=()=>{
+const Work = () => {
+    const data = useContext(sendName)
     return (
-        <>
-            <h1>Work</h1>
-        </>
+        <div>
+            <h1>Work- <button onClick={()=> data.setNumber(10)}>add</button></h1>
+            <h1>name :{data.name} {data.number}</h1>
+        </div>
     )
 }
 

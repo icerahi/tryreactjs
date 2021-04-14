@@ -6,6 +6,7 @@ import Home from './components/home'
 import Work from './components/work'
 import Todo from './components/todo'
 import Reducer from './components/Reducer'
+import ContextApi from './components/ContextApi'
 
  
 const App=()=>{
@@ -13,7 +14,7 @@ const App=()=>{
 
   return (
     <>
-     <Reducer/>
+     <ContextApi/>
     </>
   )
 }

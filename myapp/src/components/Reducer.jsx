@@ -20,7 +20,7 @@ const reducer=(state,action)=>{
                 number1:state.number1-action.num1 }
 
         case 'reset_1':
-            return {number1:0}
+            return initialState
 
         case 'inc_2':
             return{...state,number2:state.number2+ action.num2}
@@ -28,7 +28,7 @@ const reducer=(state,action)=>{
         case "dec_2":
             return {...state, number2:state.number2- action.num2} 
         case 'reset_2':
-            return { number2:0}
+            return initialState.number2
         
         default:
             return state
