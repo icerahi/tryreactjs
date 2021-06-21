@@ -17,7 +17,7 @@ const Posts = () => {
             })
             .then(response => setPosts(response.data))
         })();
-    }, [])
+    })
 
     return (
         <div  >

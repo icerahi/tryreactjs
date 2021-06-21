@@ -45,7 +45,7 @@ const App = () => {
       <BrowserRouter>
       <Navbar/>
       <Route exact path="/" component={Home} />
-
+us
     
 
         { profile !==null?
